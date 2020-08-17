@@ -1,0 +1,514 @@
+/* #e36b6b */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-family: Avenir;
+    font-size: 20px;
+    color: #717171;
+}
+
+.clearfix {zoom: 1;
+}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+header {
+    background-color: #0b2743;
+    margin: 0
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    box-shadow: 0 2px 5px rgb(214, 214, 214);
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /*  top right bottom left.. top bottom is 0 left right is auto */
+
+}
+
+
+.row,
+.how-it-works-section{
+    max-width: 75%;
+    margin: 0 auto; /*  top right bottom left.. top bottom is 0 left right is auto */
+
+}
+
+.box{ padding: 1%;
+    text-align: center;
+}
+
+/*FONTS*//*FONTS*//*FONTS*//*FONTS*//*FONTS*//*FONTS*//*FONTS*/
+
+h1{ /*titles*/
+    font-size: 180%;
+    font-weight:900;
+    text-transform: uppercase;
+    color: #F28383;
+}
+
+h2{ /*subtitles*/
+    font-size: 90%;
+    font-weight: 300;
+}
+
+h3{ /*phrases*/
+    font-size: 70%;
+    font-weight: 300;
+
+}
+    
+
+
+/*INTRODUCTION*//*INTRODUCTION*//*INTRODUCTION*//*INTRODUCTION*//*INTRODUCTION*/
+.landing{
+    position: relative;
+    width: 1140px;
+    left: 10%;
+    top: 10%;
+    max-height: 400px;
+}
+
+
+.generator-content{
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 600px;
+    float: left;
+    top:-0%;
+    left: 400px;
+    right: 5%;
+    margin: 0;
+    padding: 15px;
+    border-radius:20px;
+    height: 400px;
+}
+
+
+/*INTRO TEXT*//*INTRO TEXT*//*INTRO TEXT*//*INTRO TEXT*//*INTRO TEXT*//*INTRO TEXT*/
+.introduction-content {
+    width: 25%;
+    border-left: 5px solid #E3DDCF;
+    padding-left: 30px;
+    height: 400px;
+    color: #fff;
+}
+
+.introduction-title {
+    margin-bottom: 30px;
+}
+
+.introduction-tagline {
+    margin-bottom: 30px;
+}
+
+.introduction-freetures {
+    margin-bottom: 100px;
+}
+
+.introduction-freetures p{ /*paragraphs*/
+    font-size: 80%;
+    line-height: 25px;
+}
+
+/*LEARN MORE*//*LEARN MORE*//*LEARN MORE*//*LEARN MORE*//*LEARN MORE*/
+
+.learn-more{ 
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    font-size: 80%;
+    font-weight: 500;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #e36b6b;
+}
+
+.learn-more-icon{ 
+    color: rgb(227, 107, 107);
+    display: block;
+    width: 100%;
+    font-size: 200%;
+
+    text-align: center;
+}
+
+/*BUTTONS*//*BUTTONS*//*BUTTONS*//*BUTTONS*//*BUTTONS*//*BUTTONS*//*BUTTONS*/
+
+.introduction-results{ 
+}
+
+#button{ 
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+.button h2{
+    background-color: #F28383;
+    margin-right: %;
+    padding: 7px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.button h2:hover{
+    background-color: #e36b6b;
+}
+
+
+/*NAVIGATION*//*NAVIGATION*//*NAVIGATION*//*NAVIGATION*//*NAVIGATION*//*NAVIGATION*/
+.menu li {
+    display: inline-block;
+    font-size: 80%;
+    padding: 5px 15px;
+    margin: 30px 15px; 
+    text-transform: uppercase;
+
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.menu a:hover {
+border-left: 2px solid #fff;
+    padding: 5px;
+}
+
+.menu{
+    float: right;
+}
+
+/*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*/
+
+
+
+.button {
+    width: 50%;
+}
+
+/*UPLOAD FILE*/
+
+.uploads-content{ 
+    position: relative;
+}
+input[type=file]{
+    display: none;
+}
+
+
+input[type=file] + label[for=inpfolder]:before{
+    display: none;
+}
+
+label[for=inpfile]:before{
+    content: "+";
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    transform: translateY(-50%;);
+    background-color: #b17a7a;
+    border: 2px solid #b17a7a;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    color: #ffffff;
+    left: -50px;
+}
+
+input[type=file]:hover + label[for=inpfile]:before
+{
+        color: #fff;
+        background-color: #892626;
+        border: 2px solid #892626;
+}
+
+label[for=inpfile]:hover{
+    color: #bf6161
+}
+
+.uploads{
+    display: block;
+    font-size: 80%;
+    margin-left: 50px;
+}
+
+
+
+.uploads-folder{
+    font-size: 60%;
+    text-decoration: underline;
+}
+
+.uploads-folder:hover{
+    color: #bf6161;
+    
+}
+
+
+
+
+
+/*CHECKBOX*//*CHECKBOX*//*CHECKBOX*//*CHECKBOX*//*CHECKBOX*/
+input[type=checkbox]{
+    display: none;
+}
+
+label{position: relative;}
+
+label:before{ 
+    content: "";
+    border: 1px solid #546b6b;
+    border-radius: 50%;
+    
+    /*
+    background: url("check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    */
+    
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -18px;
+    top: 2px;
+    
+    /*
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(.54,.01,0,1.49);
+    */
+    
+}
+
+/*
+input[type=checkbox]:checked + label:before{
+    transform: scale(1) rotateZ(0deg);
+
+*/
+
+input[type=checkbox]:checked +label:before{
+    
+    content: "";
+    border: px solid #546b6b;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -18px;
+    top: 2px;
+    border-radius: 50%;
+    background-color: rgba(84, 107, 107, 0.71);
+
+}
+/*settings and styles*//*settings and styles*/
+.settings,
+.styles{
+    font-size: 70%;
+    padding: 10px 0px 5px 0px;
+}
+
+.settings-box,
+.styles-box{
+    float: left;
+    display: inline-block;
+}
+
+.settings-col,
+.styles-col{ 
+    font-size: 70%;
+    position: absolute;
+    width: 30%;
+}
+.styles-error,
+.settings-error{
+     display: none;
+    color: red;
+}
+
+/*settings*//*settings*//*settings*//*settings*//*settings*//*settings*/
+
+/*
+.settings-options input[type=checkbox]{
+    width: 15px;
+    margin-right: 10px;
+    display: inline-block;
+}
+*/
+
+.settings-options{ 
+    font-size: 70%;
+    float: left;
+    display: inline-block;
+}
+
+
+/*settings*//*settings*//*settings*//*settings*//*settings*//*settings*/
+
+/*Styles*//*Styles*//*Styles*//*Styles*//*Styles*//*Styles*//*Styles*/
+
+.styles-box{
+    padding-left: 10px;
+    margin-left: 3px;
+}
+
+.styles-options{ 
+    font-size: 70%;
+    float: left;
+    display: inline-block;
+}
+
+/*
+.styles-options {
+    margin-right: 10px;
+    display: inline-block;
+}
+*/
+
+.styles {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+/*Styles*//*Styles*//*Styles*//*Styles*//*Styles*//*Styles*//*Styles*/
+
+
+.drop-image{ 
+    border: 1px dashed #c9c9c9;
+    position: absolute;
+    bottom: 70px;
+    top: 40px;
+    right: 10px;
+    left: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    color: #c9c9c9;
+}
+
+.drop-image p{ 
+    top:40%;
+    position: absolute;
+    width: 100%;
+}
+
+
+.button-generate{ 
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 6px;
+    float: right;
+    padding: 5px 20px; 
+    border: 2px solid #F28383; 
+    color: #F28383;
+    font-weight: 500;
+    text-transform: uppercase;
+
+
+}
+
+.button-generate p { 
+    text-decoration: none;
+    color: #4d3c96;
+}
+
+.button-generate p:hover { 
+    color: #a9a4bc;
+}
+
+
+/*What it does*//*What it does*//*What it does*//*What it does*/
+
+#how-it-works{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 140%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.how-it-works{
+    border: 1px solid #eee;
+    align-content: center;
+}
+
+.how-it-works h3{
+    margin: 10px auto;
+}
+
+.how-it-works-section{ 
+    margin: 50px auto;
+    border-radius: 40px;
+    background-color: #eee;
+}
+
+.steps{ 
+    border: 1px  #9b5e5e;
+    text-align: center;
+    padding: 5px;
+    height: 200px;
+}
+
+.steps p{
+    font-size: 70%;
+    margin-top: 10px;
+}
+
+.step-name{ 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.steps-icon{ 
+    font-size: 150%;
+    color: #7e7e7e;
+    margin: 20px;
+    font-weight: 400;
+    
+}
+
+canvas{
+}
+
+.imagePreview{
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid #832b2b;
+    margin-top: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #a55454;
+    
+}
+
+.image-preview__image{ 
+    display: none;
+    width: 100%;
+}

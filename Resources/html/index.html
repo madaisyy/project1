@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+   <head lang="en">
+        <meta charset="utf-8">
+      
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Seamture is a custom texture generator that automates the process of seamless textures for architecture renderings.">
+        
+        
+        
+    <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="/Vendors/css/grid.css">
+    
+    <link rel="stylesheet" type="text/css" href="index.php">
+    <link rel="stylesheet" type="text/css" href="../php/uploads.php">
+   
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+   
+        <title>Seamture</title> 
+        
+    </head>
+    <body>
+        <header id="header">
+        
+        <div class="row">
+            <div class="menu">
+            <ul>
+               <li><a href="#what-is-it-section--js" id="what-is-it-nav">What is it</a></li>
+               <li><a href="#how-it-works-section--js" id="how-it-works-nav">How it works</a></li>
+               <li><a href="#results--js" id="results-nav">Results</a></li>
+               <li><a href="#register--js" id="register-nav">Register</a></li>
+            </ul>
+            </div>  
+        </div>
+        
+       <section class="landing">
+           <!--SEAMTURE-->
+            <div class="introduction-content">
+            <div class="introduction-title">
+                <h1>Seamture</h1>
+                <h2>Custom Texture Generator</h2>
+            </div>
+
+            <div class="introduction-tagline">
+               <h3>Automating the process of seamless texture for architecture renderings.</h3>
+            </div>
+
+            <div class="introduction-freetures">
+                <p><strong>It's Free.</strong></p>
+                <p><strong>No Registration.</strong></p>
+                <p><strong>Ready-Set-Go.</strong></p>
+            </div>
+
+            <div class="button introduction-results" id="button">
+                <h2>Results</h2>
+            </div>
+
+            </div>
+            
+            <!--SEAMTURE-->
+            
+            
+
+       
+        
+<!--Box-->
+        <div class="generator-content clearfix">
+           
+            <div class="uploads-content">
+                    <div class="uploads uploads-file">
+                    
+                    <input type="file" name="inpfile" id="inpfile" class="inpfile"> 
+                    <label for="inpfile">Add Photo</label>
+
+                    <div class="imagePreview" id="imagePreview"> 
+                    <img src="" alt="" class="image-preview__image"> 
+                    <span class="image-preview__default-text">Image Preview</span>
+                     </div> 
+                    </div>
+                    
+                    <div class="uploads uploads-folder">
+                    <input type="file" name="inpfolder" id="inpfolder">
+                    <label for="inpfolder">Or Upload Folder</label>
+                    </div>
+                     
+            </div>
+
+                     
+
+            
+        
+<!-- Styles -->
+            
+            <div class="styles-box span-2-of-3">
+            <div class="styles span-3-of-3">
+                Styles (Select One) <br>
+                <h3 class="styles-error"> Please select one</h3>
+            </div>
+               
+                <div class="styles-options span-1-of-3">
+                  <div>
+                  <input type="checkbox" id="seamless"><label for="seamless" class="styles-label">Seamless</label><br>
+                   
+                    
+                  <input type="checkbox" id="quarterturn" >
+                  <label for="quarterturn">Quarterturn</label>
+                  </div>   
+                </div>
+                 
+                 <div class="styles-options span-1-of-3">
+                  <div>
+                  <input type="checkbox" id="ashlar"> 
+                  <label for="ashlar">Ashlar</label> <br>
+                  <input type="checkbox" id="herringbone"><label for="herringbone">Herringbone</label>
+                  </div>   
+                </div> 
+                 
+                 <div class="styles-options span-1-of-3">
+                  <div>
+                  <input type="checkbox" id="stacked"><label for="stacked">Stacked</label>
+                  </div>   
+                </div>
+                </div>
+<!-- Settings -->
+            
+            
+             <div class="settings-box span-1-of-3">
+            <div class="settings span-3-of-3">
+                Settings
+            <h3 class="settings-error"> Please select one</h3>
+
+                
+            </div>
+                <div class="settings-options">
+                  <form>
+             
+                       <input type="checkbox" id="reduce-file-size"> 
+                       <label for="reduce-file-size">Reduce File Size <br></label>
+                       <input type="checkbox" id="download-when-complete"><label for="download-when-complete">Download When Complete</label>
+                 
+                    
+                 </form>
+                </div>
+                </div>
+<!-- Options -->
+            <div class="drop-image">
+                <p>DROP IMAGE HERE</p>
+            </div>
+               
+            <div class="button-generate" id="button-generate">
+                <p>Generate</p>
+            </div>
+               
+        </div>
+            
+<!--Box-->
+        </section>
+        <div class="learn-more">Learn More
+            <ion-icon name="chevron-down-circle" class="learn-more-icon"></ion-icon>
+        </div>
+
+        </header>
+                
+<!-- Styles -->
+
+
+<!-- How it Works -->
+
+   
+         
+         <section class="row how-it-works-section" id="how-it-works-section--js"> 
+         
+         <div class="box how-it-works" >
+             <h2 id="how-it-works">
+                 How it works
+             </h2>
+             <h3>
+                 Automate the boring stuff
+             </h3>     
+        </div>
+
+             
+        <div class="col steps span-1-of-3">
+           <ion-icon name="cloud-upload-outline" class="steps-icon"></ion-icon>
+           <div class="step-name">Upload Image</div>
+            <p>Upload an image or a folder</p>
+        </div>  
+        
+        <div class="col steps span-1-of-3"> 
+        <ion-icon name="hammer-outline" class="steps-icon"></ion-icon>
+        <div class="step-name">Generate</div>
+            <p>Select texture generator setting</p>
+        </div>     
+        
+        <div class="col steps span-1-of-3">
+          <ion-icon name="color-wand-outline" class="steps-icon"></ion-icon>
+           <div class="step-name">Stick and Apply</div>
+            <p>Ready to use for your renderings!</p>
+
+        </div>     
+    
+         </section>
+         
+         
+         <section class="row how-it-works-section" id="how-it-works-section--js"> 
+         
+         <div class="box how-it-works" >
+             <h2 id="how-it-works">
+                 How it works
+             </h2>
+             <h3>
+                 Automate the boring stuff
+             </h3>     
+        </div>
+
+             
+        <div class="col steps span-1-of-3">
+           <ion-icon name="cloud-upload-outline" class="steps-icon"></ion-icon>
+           <div class="step-name">Upload Image</div>
+            <p>Upload an image or a folder</p>
+        </div>  
+        
+        <div class="col steps span-1-of-3"> 
+        <ion-icon name="hammer-outline" class="steps-icon"></ion-icon>
+        <div class="step-name">Generate</div>
+            <p>Select texture generator setting</p>
+        </div>     
+        
+        <div class="col steps span-1-of-3">
+          <ion-icon name="color-wand-outline" class="steps-icon"></ion-icon>
+           <div class="step-name">Stick and Apply</div>
+            <p>Ready to use for your renderings!</p>
+
+        </div>     
+    
+         </section>
+<!-- How it Works -->
+
+        
+  
+        
+    </body>
+    
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"> 
+    </script>
+    <script src="../js/canvas.js"></script>
+    <script src="../js/rainbow-hover.js"></script>
+    <script src="../js/stacked.js"></script>
+    <script src="/Vendors/js/jquery.waypoints.js"></script>
+    <script src="../js/image-preview.js"></script>
+    <script src="/Vendors/js/FileSaver.js"></script>
+    
+    <script>
+        
+  
+
+   
+    </script>
+   
+    
+
+</html>

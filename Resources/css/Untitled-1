@@ -1,0 +1,14 @@
+class Rectangle { 
+    constructor (){ 
+        console.log("the rectangle is being created.");
+    }
+    }
+    
+    function phone (width, height){ 
+        this.width = width;
+        this.height = height;
+        
+        this.area = function (x){ 
+            this.height += x;
+        }
+    }
